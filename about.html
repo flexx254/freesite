@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+ <meta name="description" content="Affordable, SEO-optimized websites for small businesses. DollarSites helps you grow online with expert web design from Kenya."/>
+  <meta name="author" content="DollarSites Team"/>
+  <meta property="og:title" content="DollarSites - Affordable Websites & SEO Services"/>
+  <meta property="og:description" content="Grow your business online with professional, fast, and affordable websites from DollarSites."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yourdomain.com"/>
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg"/>
+  <title>DollarSites - Affordable Websites & SEO for Small Businesses</title>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Your Business Name",
+    "image": "https://example.com/logo.png",
+    "url": "https://example.com",
+    "telephone": "+254712345678",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Nairobi Lane",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "description": "Affordable web design and SEO in Kenya"
+  }
+  
+
+  </script>
+  <link rel="canonical" href="https://yourdomain.com/" />
+<link rel="icon" href="/favicon.ico" />
+  
+
+  
+
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: #3b5f5f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+ 
+    nav {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    nav a:last-child {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Hamburger */
+    .menu-icon {
+      display: none;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      z-index: 1100;
+      top:2px;
+    }
+
+    .menu-icon span {
+      background: #fff;
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition: 0.3s ease;
+    }
+
+    .menu-icon span:nth-child(1) {
+      top: 6px;
+    }
+
+    .menu-icon span:nth-child(2) {
+      top: 13px;
+    }
+
+    .menu-icon span:nth-child(3) {
+      top: 20px;
+    }
+
+    .menu-icon.open span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 13px;
+    }
+
+    .menu-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-icon.open span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 13px;
+    }
+
+    #navMenu {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+        
+
+            
+        
+      }
+
+      #navMenu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      #navMenu.show {
+        display: flex;
+      }
+
+      #navMenu a {
+        margin: 10px 0;
+      }
+    }
+
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+
+nav a {
+    color:#2f4f4f;
+}
+
+nav a:last-child{
+    
+    color: #2f4f4f;
+}
+}
+
+.wrapper-logo{
+  margin-top: 5px;
+  margin-left: -20px;
+}
+  
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+<div class="wrapper-logo">
+  <svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+    <!-- Background -->
+    <rect width="100" height="40" rx="6" style="fill:#cccccc;" />
+
+    <!-- Small Globe Icon -->
+    <g transform="translate(15,20)">
+      <circle r="10" style="fill:none; stroke:#2f4f4f; stroke-width:2;" />
+      <ellipse rx="10" ry="2.5" style="stroke:#2f4f4f; stroke-width:1; fill:none;" />
+      <ellipse rx="2.5" ry="10" style="stroke:#2f4f4f; stroke-width:1; fill:none;" />
+      <circle cx="5" cy="4" r="1" style="fill:#2f4f4f;" />
+      <circle cx="-4" cy="-5" r="1" style="fill:#2f4f4f;" />
+      <circle cx="1" cy="6" r="1" style="fill:#2f4f4f;" />
+    </g>
+
+    <!-- Text -->
+    <text x="35" y="25" style="fill:#2f4f4f; font-size:14px; font-family:Arial, sans-serif; font-weight:bold;">
+      Freesite
+    </text>
+  </svg>
+</div>
+   <div class="menu-icon" onclick="toggleMenu(this)" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  <nav id="navMenu" aria-label = "Main navigation">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="service.html">Service</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact Us</a>
+   
+      <a href="about.html">About us</a>
+      <a href="blog.html">Blog</a>
+      
+      <a href="pricing.html">Get Started</a>
+      
+      
+    </nav>
+
+  </header>
+  
+
+
+<main>
+  <style>
+    /* General resets and base */
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* About Header */
+    section.header {
+      background-color: #2f4f4f;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section.header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    section.header p {
+      font-size: 1.1rem;
+    }
+
+    /* Center all H2 */
+    h2 {
+      color: #2f4f4f;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Section content */
+    section.content {
+      padding: 40px 20px 60px;
+      color: #333;
+    }
+
+    section.content p,
+    section.content ul {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    /* SVG styling */
+    svg {
+      display: block;
+      margin: 1.5rem auto 2rem;
+      max-width: 150px;
+      height: auto;
+      stroke: #2f4f4f;
+      fill: #2f4f4f;
+    }
+
+    /* Divider style - subtle */
+    .divider {
+      width: 100%;
+      height: 60px;
+      overflow: hidden;
+    }
+
+    /* Responsive typography */
+    @media (max-width: 600px) {
+      section.header h1 {
+        font-size: 2rem;
+      }
+      section.content p,
+      section.content ul {
+        font-size: 1rem;
+      }
+      svg {
+        max-width: 120px;
+      }
+    }
+  </style>
+
+  <!-- About Header -->
+  <section class="header" aria-label="About Us Header">
+    <h1>About Us</h1>
+    <p>Get to know who we are and why we build websites that work for you.</p>
+  </section>
+
+  
+  
+<!-- Web design themed divider -->
+<div style="width: 100%; height: 60px; overflow: hidden;">
+  <svg viewBox="0 0 100 10" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+    <!-- Left line -->
+    <line x1="0" y1="5" x2="42" y2="5" stroke= "#2f4f4f" stroke-width="0.5" />
+
+    <!-- Middle Web Icon: </> -->
+    <text x="50" y="6.5" text-anchor="middle" font-size="3" fill="#2f4f4f" font-family="monospace">
+      &lt;/&gt;
+    </text>
+
+    <!-- Right line -->
+    <line x1="58" y1="5" x2="100" y2="5" stroke="#2f4f4f" stroke-width="0.5" />
+  </svg>
+</div>
+
+  
+
+  <!-- Our Mission Section -->
+  <section class="content" aria-labelledby="mission-heading">
+    <h2 id="mission-heading">Our Mission</h2>
+    <svg role="img" aria-labelledby="mission-title mission-desc" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <title id="mission-title">Rocket Launch Icon</title>
+      <desc id="mission-desc">A rocket symbolizing growth and progress.</desc>
+      <path d="M32 2 L22 42 L32 34 L42 42 Z" stroke="#2f4f4f" fill="#2f4f4f"/>
+      <path d="M32 2 L32 50" stroke="#2f4f4f"/>
+      <circle cx="32" cy="56" r="6" fill="#2f4f4f" />
+    </svg>
+    <p>
+      Our mission is to empower individuals, startups, and businesses with clean, fast, and reliable websites. We focus on clarity, performance, and simplicity — so your users get the best experience possible.
+    </p>
+  </section>
+
+  
+  
+<!-- Web design themed divider -->
+<div style="width: 100%; height: 60px; overflow: hidden;">
+  <svg viewBox="0 0 100 10" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+    <!-- Left line -->
+    <line x1="0" y1="5" x2="42" y2="5" stroke= "#2f4f4f" stroke-width="0.5" />
+
+    <!-- Middle Web Icon: </> -->
+    <text x="50" y="6.5" text-anchor="middle" font-size="3" fill="#2f4f4f" font-family="monospace">
+      &lt;/&gt;
+    </text>
+
+    <!-- Right line -->
+    <line x1="58" y1="5" x2="100" y2="5" stroke="#2f4f4f" stroke-width="0.5" />
+  </svg>
+</div>
+
+
+  <!-- What We Do Section -->
+  <section class="content" aria-labelledby="services-heading">
+    <h2 id="services-heading">What We Do</h2>
+    <svg role="img" aria-labelledby="services-title services-desc" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linejoin="round">
+      <title id="services-title">Toolbox Icon</title>
+      <desc id="services-desc">A toolbox representing services and craftsmanship.</desc>
+      <rect x="10" y="25" width="44" height="25" rx="3" ry="3" fill="#2f4f4f" />
+      <rect x="20" y="15" width="24" height="12" rx="2" ry="2" fill="#2f4f4f" />
+      <line x1="32" y1="15" x2="32" y2="37" stroke="#fff" stroke-width="2" />
+    </svg>
+    <ul>
+      <li>Custom Website Development</li>
+      <li>Domain Setup & Hosting</li>
+      <li>SEO Optimization</li>
+      <li>Ongoing Maintenance & Support</li>
+    </ul>
+  </section>
+
+  
+  
+<!-- Web design themed divider -->
+<div style="width: 100%; height: 60px; overflow: hidden;">
+  <svg viewBox="0 0 100 10" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+    <!-- Left line -->
+    <line x1="0" y1="5" x2="42" y2="5" stroke= "#2f4f4f" stroke-width="0.5" />
+
+    <!-- Middle Web Icon: </> -->
+    <text x="50" y="6.5" text-anchor="middle" font-size="3" fill="#2f4f4f" font-family="monospace">
+      &lt;/&gt;
+    </text>
+
+    <!-- Right line -->
+    <line x1="58" y1="5" x2="100" y2="5" stroke="#2f4f4f" stroke-width="0.5" />
+  </svg>
+</div>
+
+
+  <!-- Why Choose Us Section -->
+  <section class="content" aria-labelledby="whychoose-heading">
+    <h2 id="whychoose-heading">Why Choose Us</h2>
+    <svg role="img" aria-labelledby="whychoose-title whychoose-desc" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="max-width:120px; margin: 1.5rem auto;" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <title id="whychoose-title">Shield with Checkmark Icon</title>
+      <desc id="whychoose-desc">A shield with a checkmark symbolizing trust and security.</desc>
+      <path d="M32 4L8 14V28C8 45.2 21.2 58.8 32 60C42.8 58.8 56 45.2 56 28V14L32 4Z" fill="#2f4f4f"/>
+      <path d="M26 34L30 38L40 28" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <p>
+      Choosing us means choosing <strong>reliability, performance, and peace of mind</strong>. We deliver <strong>high-quality, responsive websites</strong> built to last, optimized for <strong>speed, SEO, and user experience</strong>. Our transparent process, expert team, and dedication to your goals make us the <strong>trusted partner</strong> your brand deserves.
+    </p>
+  </section>
+</main>
+
+<footer style="background: #2f4f4f; color: white; padding: 2rem;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; max-width: 1200px; margin: auto;">
+    
+    <!-- About -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 1rem;">About DollarSites</h3>
+      <p style="line-height: 1.6;">
+        We help U.S.-based businesses grow online with fast, affordable websites and expert SEO. Made with care from Kenya.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 1rem;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="pricing.html" style="color: white; text-decoration: none;">Pricing</a></li>
+        <li><a href="service.html" style="color: white; text-decoration: none;">Service</a></li>
+        <li><a href="portfolio.html" style="color: white; text-decoration: none;">Portfolio</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact us</a></li>
+        
+        
+        <li><a href="about.html" style="color: white; text-decoration: none;">About us</a></li>
+        
+
+        <li><a href="faq.html" style="color: white; text-decoration: none;">FAQ</a></li>
+        
+        <li><a href="h&c.html" style="color: white; text-decoration: none;">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+  
+
+    <!-- Contact -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 1rem;">Contact</h3>
+      <p style="line-height: 1.8;">
+        Email: <a href="mailto:yourname@yourdomain.com" style="color: white;">yourname@yourdomain.com</a><br>
+        WhatsApp: <a href="https://wa.me/2547xxxxxxxx" style="color: white;">+2547xxxxxxxx</a><br>
+        Nairobi, Kenya
+      </p>
+    </div>
+
+    <!-- Social -->
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 1rem;">Follow Us</h3>
+      <p>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">Facebook</a><br>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">Instagram</a><br>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">LinkedIn</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;">
+    <p style="margin: 0;">&copy; 2025 DollarSites. All rights reserved.</p>
+  </div>
+</footer>
+  <script>
+    const menuIcon = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    function toggleMenu(icon) {
+      icon.classList.toggle("open");
+      navMenu.classList.toggle("show");
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+      if (!menuIcon.contains(event.target) && !navMenu.contains(event.target)) {
+        menuIcon.classList.remove("open");
+        navMenu.classList.remove("show");
+      }
+    });
+  </script>
+
+</body>
+</html>
+

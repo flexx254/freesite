@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+ <meta name="description" content="Affordable, SEO-optimized websites for small businesses. DollarSites helps you grow online with expert web design from Kenya."/>
+  <meta name="keywords" content="DollarSites, SEO, Web Design, Affordable Websites, Small Business Websites, Kenya Web Development"/>
+  <meta name="author" content="DollarSites Team"/>
+  <meta property="og:title" content="DollarSites - Affordable Websites & SEO Services"/>
+  <meta property="og:description" content="Grow your business online with professional, fast, and affordable websites from DollarSites."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yourdomain.com"/>
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg"/>
+  <title>DollarSites - Affordable Websites & SEO for Small Businesses</title>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Your Business Name",
+    "image": "https://example.com/logo.png",
+    "url": "https://example.com",
+    "telephone": "+254712345678",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Nairobi Lane",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "description": "Affordable web design and SEO in Kenya"
+  }
+  
+
+  </script>
+  <link rel="canonical" href="https://yourdomain.com/" />
+<link rel="icon" href="/favicon.ico" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: #3b5f5f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    
+
+    nav {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    nav a:last-child {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Hamburger */
+    .menu-icon {
+      display: none;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      z-index: 1100;
+      top:2px;
+    }
+
+    .menu-icon span {
+      background: #fff;
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition: 0.3s ease;
+    }
+
+    .menu-icon span:nth-child(1) {
+      top: 6px;
+    }
+
+    .menu-icon span:nth-child(2) {
+      top: 13px;
+    }
+
+    .menu-icon span:nth-child(3) {
+      top: 20px;
+    }
+
+    .menu-icon.open span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 13px;
+    }
+
+    .menu-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-icon.open span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 13px;
+    }
+
+    #navMenu {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+        
+
+            
+        
+      }
+
+      #navMenu {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      #navMenu.show {
+        display: flex;
+      }
+
+      #navMenu a {
+        margin: 10px 0;
+      }
+    }
+
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+.logo-wrapper {
+  margin-left: clamp(0.5rem, 2vw, 2rem);
+  position: relative;
+}
+
+nav a {
+    color:#2f4f4f;
+}
+
+nav a:last-child{
+    
+    color: #2f4f4f;
+}
+
+  
+}
+
+    /* Center the icon wrapper */
+    .icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 15vh; /* Full screen height */
+      width: 100%;
+    }
+
+    /* Make the SVG responsive and large */
+    .price-tag-icon {
+      width: 30vw;        /* 30% of viewport width */
+      height: auto;
+      max-width: 300px;
+      display: block;
+    }
+
+    /* Styling the tag shape */
+    .price-tag-icon .tag-shape {
+      fill: none;
+      stroke: goldenrod;         /* Green theme */
+      stroke-width: 2;
+    }
+
+    /* Styling the dollar symbol */
+    .price-tag-icon .tag-symbol {
+      font-size: 6px;
+      font-family: sans-serif;
+      fill: goldenrod;
+      dominant-baseline: middle;
+    }
+
+    /* Optional: hide text from visual layout but keep for screen readers */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    
+
+  a {
+    color: #28a745;         /* your green color */
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #28a745;         /* same green color for visited */
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+@media screen and (orientation: landscape) {
+  .icon-wrapper {
+    margin-top: 80px;   /* Increased top margin */
+    margin-bottom: 80px; /* Increased bottom margin */
+  }
+}
+
+.wrapper-logo{
+  margin-top: 5px;
+  margin-left: -20px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+<div class="wrapper-logo">
+  <svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+    <!-- Background -->
+    <rect width="100" height="40" rx="6" style="fill:#cccccc;" />
+
+    <!-- Small Globe Icon -->
+    <g transform="translate(15,20)">
+      <circle r="10" style="fill:none; stroke:#2f4f4f; stroke-width:2;" />
+      <ellipse rx="10" ry="2.5" style="stroke:#2f4f4f; stroke-width:1; fill:none;" />
+      <ellipse rx="2.5" ry="10" style="stroke:#2f4f4f; stroke-width:1; fill:none;" />
+      <circle cx="5" cy="4" r="1" style="fill:#2f4f4f;" />
+      <circle cx="-4" cy="-5" r="1" style="fill:#2f4f4f;" />
+      <circle cx="1" cy="6" r="1" style="fill:#2f4f4f;" />
+    </g>
+
+    <!-- Text -->
+    <text x="35" y="25" style="fill:#2f4f4f; font-size:14px; font-family:Arial, sans-serif; font-weight:bold;">
+      Freesite
+    </text>
+  </svg>
+</div>
+    
+
+
+    <div class="menu-icon" onclick="toggleMenu(this)" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="service.html">Service</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About us</a>
+      <a href="blog.html">Blog</a>
+      
+      
+      
+      <a href="pricing.html">Get Started</a>
+      
+    </nav>
+  </header>
+
+ 
+<main>
+  <!-- Header -->
+  <section style="background-color: #2f4f4f; color: white; padding: 80px 20px; text-align: center;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Simple & Transparent Pricing</h1>
+    
+  <figure class="icon-wrapper">
+    <svg class="price-tag-icon"
+         xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 24 24"
+         role="img"
+         aria-labelledby="title desc">
+      <title id="title">Price Tag Icon</title>
+      <desc id="desc">A green price tag icon for pricing page</desc>
+
+      <!-- Tag shape -->
+      <path d="M3 8L13 3L21 11L16 21L6 16L3 8Z" class="tag-shape" />
+
+      <!-- Dollar symbol -->
+      <text x="12" y="14" text-anchor="middle" class="tag-symbol">$</text>
+    </svg>
+    <figcaption class="sr-only">Illustration representing pricing</figcaption>
+  </figure>
+
+    
+    <p style="font-size: 1.1rem;">Both plans include Hosting, SEO, and Website Maintenance</p>
+    
+<p>
+ <br><br> This is after we have designed an 
+  <a href="index.html"
+     title="Visit our homepage for your free, mobile-friendly website"
+     aria-label="Affordable mobile friendly website designed for you">
+     affordable (actually free - Limited offer), mobile friendly website
+  </a> for you.
+</p>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section style="padding: 60px 20px; background-color: #f9f9f9;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: 0 auto; ">
+      <!-- Monthly Plan -->
+      <div style="background: white; border: 2px solid #2f4f4f; border-radius: 10px; padding: 30px; width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <h2 style="color: #2f4f4f;">Monthly Plan</h2>
+        <p style="font-size: 1.8rem; margin: 10px 0;"><strong>$20/month</strong></p>
+        <ul style="list-style: none; padding: 0; color: #2f4f4f;">
+          <li>Custom Domain</li>
+          <li>Hosting & SSL</li>
+          <li>SEO Optimization</li>
+          <li>Website Maintenance</li>
+        </ul>
+        <button onclick="showForm('monthlyOverlay')" style="margin-top: 20px; background-color: #2f4f4f; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
+          Choose Monthly
+        </button>
+      </div>
+
+      <!-- Annual Plan -->
+      <div style="background: white; border: 2px solid #2f4f4f; border-radius: 10px; padding: 30px; width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); ">
+        <h2 style="color: #2f4f4f;">Annual Plan</h2>
+        <p style="font-size: 1.8rem; margin: 10px 0;"><strong>$200/year</strong></p>
+        <p style="color: green;">Save $40 compared to monthly</p>
+        <ul style="list-style: none; padding: 0; color: #2f4f4f;">
+          <li>Custom Domain</li>
+          <li>Hosting & SSL</li>
+          <li>SEO Optimization</li>
+          <li>Website Maintenance</li>
+        </ul>
+        <button onclick="showForm('annualOverlay')" style="margin-top: 20px; background-color: #2f4f4f; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
+          Choose Annual
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overlays -->
+  <div id="monthlyOverlay" class="form-overlay">
+    <div class="form-box">
+      <span class="close-btn" onclick="closeForm()">×</span>
+      <h3>Monthly Plan Request</h3>
+      <form onsubmit="handleSubmit(event, 'monthlyOverlay')">
+        <input name="Name" placeholder="Your Name" required>
+        <input name="Email" type="email" placeholder="Your Email" required>
+        <input name="Preferred Domain" placeholder="Preferred Domain Name" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="annualOverlay" class="form-overlay">
+    <div class="form-box">
+      <span class="close-btn" onclick="closeForm()">×</span>
+      <h3>Annual Plan Request</h3>
+      <form onsubmit="handleSubmit(event, 'annualOverlay')">
+        <input name="Name" placeholder="Your Name" required>
+        <input name="Email" type="email" placeholder="Your Email" required>
+        <input name="Preferred Domain" placeholder="Preferred Domain Name" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Fancy Confirmation -->
+  <div id="confirmationMessage" class="form-overlay" style="display:none;">
+    <div class="form-box" style="text-align: center;">
+      <h2 style="font-family: 'Georgia', serif; font-size: 2rem; color: green;">Thank you!</h2>
+      <p style="font-family: 'Cursive', sans-serif; font-size: 1.2rem;">Your submission has been received.</p>
+      <button onclick="closeForm()" style="margin-top: 15px; background: #2f4f4f; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Close</button>
+    </div>
+  </div>
+
+  <style>
+    .form-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      position: relative;
+    }
+    .form-box input, .form-box button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    .form-box button {
+      background-color: #2f4f4f;
+      color: white;
+      border: none;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #2f4f4f;
+    }
+    
+
+  </style>
+
+  <script>
+    function showForm(id) {
+      document.body.style.overflow = 'hidden';
+      document.getElementById(id).style.display = 'flex';
+    }
+
+    function closeForm() {
+      document.body.style.overflow = 'auto';
+      document.getElementById('monthlyOverlay').style.display = 'none';
+      document.getElementById('annualOverlay').style.display = 'none';
+      document.getElementById('confirmationMessage').style.display = 'none';
+    }
+
+    function handleSubmit(event, overlayId) {
+      event.preventDefault();
+      // Simulate form submission (you can add real fetch/Formspree logic here)
+      document.getElementById(overlayId).style.display = 'none';
+      document.getElementById('confirmationMessage').style.display = 'flex';
+    }
+    
+    
+
+  </script>
+</main>
+ 
+
+<footer style="background: #2f4f4f; color: white; padding: 2rem;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; max-width: 1200px; margin: auto;">
+    
+    <!-- About -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 1rem;">About DollarSites</h3>
+      <p style="line-height: 1.6;">
+        We help U.S.-based businesses grow online with fast, affordable websites and expert SEO. Made with care from Kenya.
+      </p>
+    </div>
+
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 1rem;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="pricing.html" style="color: white; text-decoration: none;">Pricing</a></li>
+        <li><a href="service.html" style="color: white; text-decoration: none;">Service</a></li>
+        <li><a href="portfolio.html" style="color: white; text-decoration: none;">Portfolio</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact us</a></li>
+      
+        <li><a href="about.html" style="color: white; text-decoration: none;">About us</a></li>
+        
+
+        <li><a href="faq.html" style="color: white; text-decoration: none;">FAQ</a></li>
+        
+        <li><a href="h&c.html" style="color: white; text-decoration: none;">Terms & Conditions</a></li>
+    
+        
+      </ul>
+    </div>
+
+    
+
+    <!-- Contact -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 1rem;">Contact</h3>
+      <p style="line-height: 1.8;">
+        Email: <a href="mailto:yourname@yourdomain.com" style="color: white;">yourname@yourdomain.com</a><br>
+        WhatsApp: <a href="https://wa.me/2547xxxxxxxx" style="color: white;">+2547xxxxxxxx</a><br>
+        Nairobi, Kenya
+      </p>
+    </div>
+
+    <!-- Social -->
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 1rem;">Follow Us</h3>
+      <p>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">Facebook</a><br>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">Instagram</a><br>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">LinkedIn</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;">
+    <p style="margin: 0;">&copy; 2025 DollarSites. All rights reserved.</p>
+  </div>
+</footer>
+  <script>
+    const menuIcon = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    function toggleMenu(icon) {
+      icon.classList.toggle("open");
+      navMenu.classList.toggle("show");
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+      if (!menuIcon.contains(event.target) && !navMenu.contains(event.target)) {
+        menuIcon.classList.remove("open");
+        navMenu.classList.remove("show");
+      }
+    });
+  </script>
+
+</body>
+</html>
+

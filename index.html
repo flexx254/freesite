@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+ <meta name="description" content="Free website development, affordable SEO-optimized websites for small businesses. Freesite helps you grow online with expert web design from Kenya."/>
+  <meta name="keywords" content="Freesite, SEO, Web Design, Affordable Websites, Small Business Websites, Kenya Web Development"/>
+  <meta name="author" content="Freesite Team"/>
+  <meta property="og:title" content="Freesite - Affordable Websites & SEO Services"/>
+  <meta property="og:description" content="Grow your business online with professional, fast, and affordable websites from Freesite."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://freesite.co.ke"/>
+  <meta property="og:image" content="https://freesite.co.ke/og-image.jpg"/>
+  <title>Freesite - Free Websites & affordable SEO for Small Businesses</title>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Freesite",
+    "image": "https://example.com/logo.png",
+    "url": "https://freesite.co.ke",
+    "telephone": "+254783917685",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "description": "Free sites and  affordable SEO in Kenya"
+  }
+  
+
+  </script>
+  <link rel="canonical" href="https://freesite.co.ke/" />
+<link rel="icon" href="/favicon.ico" />
+  
+
+
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: #3b5f5f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    
+    nav {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    nav a:last-child {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Hamburger */
+    .menu-icon {
+      display: none;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      z-index: 1100;
+      top:2px;
+    }
+
+    .menu-icon span {
+      background: #fff;
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition: 0.3s ease;
+    }
+
+    .menu-icon span:nth-child(1) {
+      top: 6px;
+    }
+
+    .menu-icon span:nth-child(2) {
+      top: 13px;
+    }
+
+    .menu-icon span:nth-child(3) {
+      top: 20px;
+    }
+
+    .menu-icon.open span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 13px;
+    }
+
+    .menu-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-icon.open span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 13px;
+    }
+
+    #navMenu {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+        
+
+            
+        
+      }
+
+      #navMenu {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      #navMenu.show {
+        display: flex;
+      }
+
+      #navMenu a {
+        margin: 10px 0;
+      }
+    }
+
+  
+  
+  
+
+
+
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+.logo-wrapper {
+  margin-left: clamp(0.5rem, 2vw, 2rem);
+  position: relative;
+}
+
+nav a {
+    color:#2f4f4f;
+}
+
+nav a:last-child{
+    
+    color: #2f4f4f;
+}
+  
+}
+
+.hero {
+  background-color: #2f4f4f;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  
+}
+
+.hero .highlight {
+  color: #ffd700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.light-bg {
+  background-color: #f9f9f9;
+}
+
+.section h2 {
+  color: #2f4f4f;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #2f4f4f;
+}
+
+.section ul li {
+  margin: 10px 0;
+}
+
+.cta {
+  margin-top: 35px;
+}
+
+.btn-light {
+  background-color: white;
+  color: #2f4f4f;
+  border: 2px solid white;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-dark {
+  background-color: #2f4f4f;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.wrapper-logo{
+  margin-top: 5px;
+  margin-left: -20px;
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <header>
+
+<div class="wrapper-logo">
+  <svg role = "img" aria-label = "Freesite Logo" width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+    <!-- Background -->
+    <rect width="100" height="40" rx="6" style="fill:#cccccc;" />
+
+    <!-- Small Globe Icon -->
+    <g transform="translate(15,20)">
+      <circle r="10" style="fill:none; stroke:#2f4f4f; stroke-width:2;" />
+      <ellipse rx="10" ry="2.5" style="stroke:#2f4f4f; stroke-width:1; fill:none;" />
+      <ellipse rx="2.5" ry="10" style="stroke:#2f4f4f; stroke-width:1; fill:none;" />
+      <circle cx="5" cy="4" r="1" style="fill:#2f4f4f;" />
+      <circle cx="-4" cy="-5" r="1" style="fill:#2f4f4f;" />
+      <circle cx="1" cy="6" r="1" style="fill:#2f4f4f;" />
+    </g>
+
+    <!-- Text -->
+    <text x="35" y="25" style="fill:#2f4f4f; font-size:14px; font-family:Arial, sans-serif; font-weight:bold;">
+      Freesite
+    </text>
+  </svg>
+</div>
+    
+   
+    <div class="menu-icon" onclick="toggleMenu(this)" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="service.html">Service</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact Us</a>
+      
+      <a href="about.html">About us</a>
+
+      <a href="blog.html">Blog</a>
+      <a href="pricing.html">Get Started</a>
+      
+      
+    </nav>
+  </header>
+
+<main>
+  
+<section class="hero">
+  <h1>Free Website Design in Kenya – Launch Your Online Presence</h1>
+  
+  
+<div style ="margin-bottom:30px;margin-top:4px;">
+  
+<svg viewBox="0 100 300 120" width="100%" height="auto" role="img" aria-label=" animation showing money to wallet - free website" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="max-width:400px; display:block; margin:auto;">  
+  <!-- Chapati-style background, lowered by 15 -->  <path  
+d="M145,210  
+Q115,195 100,175  
+Q85,155 90,130  
+Q95,105 135,110  
+Q175,100 195,125  
+Q215,160 205,180  
+Q195,200 165,220  
+Q155,225 145,210  
+Z"  
+fill="#fff4b3" />
+<!-- Wallet body, lowered by 15 -->
+<rect x="110" y="135" width="80" height="40" rx="8" fill="#5c5470" />
+<rect x="110" y="125" width="80" height="20" rx="6" fill="#7f7a94" />
+<circle cx="190" cy="145" r="3" fill="#d3d3d3" />
+
+  <!-- Notes, lowered by 15 -->    <g id="notes">  
+    <rect id="note1" x="50" y="45" width="40" height="20" fill="#b5ead7" stroke="#2a9d8f" stroke-width="1.5" rx="3" />  
+    <rect id="note2" x="60" y="50" width="40" height="20" fill="#b5ead7" stroke="#2a9d8f" stroke-width="1.5" rx="3" />  
+    <rect id="note3" x="70" y="55" width="40" height="20" fill="#b5ead7" stroke="#2a9d8f" stroke-width="1.5" rx="3" />  
+    <rect id="note4" x="80" y="60" width="40" height="20" fill="#b5ead7" stroke="#2a9d8f" stroke-width="1.5" rx="3" />  
+    <rect id="note5" x="90" y="65" width="40" height="20" fill="#b5ead7" stroke="#2a9d8f" stroke-width="1.5" rx="3" />  
+  </g>    <!-- Message: It's free, lowered by 15 -->  <text id="message" x="150" y="195" text-anchor="middle" font-family="Brush Script MT, cursive"  
+font-size="22" fill="#2f4f4f" opacity="0"> free</text>
+
+  <!-- Animations for notes (translate values unchanged because relative) -->  <animateTransform xlink:href="#note1" attributeName="transform" type="translate"  
+values="0,0;60,100" keyTimes="0;1" dur="1.2s" fill="freeze" />
+<animateTransform xlink:href="#note2" attributeName="transform" type="translate"  
+values="0,0;50,95" keyTimes="0;1" dur="1.4s" fill="freeze" />
+<animateTransform xlink:href="#note3" attributeName="transform" type="translate"  
+values="0,0;40,90" keyTimes="0;1" dur="1.6s" fill="freeze" />
+<animateTransform xlink:href="#note4" attributeName="transform" type="translate"  
+values="0,0;30,85" keyTimes="0;1" dur="1.8s" fill="freeze" />
+<animateTransform xlink:href="#note5" attributeName="transform" type="translate"  
+values="0,0;20,80" keyTimes="0;1" dur="2s" fill="freeze" />
+
+  <!-- Message fade-in -->  <animate xlink:href="#message" attributeName="opacity"  
+from="0" to="1" begin="2.3s" dur="0.8s" fill="freeze" />
+</svg>
+
+
+</div>
+  <p>
+    Get a professionally designed <strong>free website in Kenya</strong> today. Our limited-time offer includes complete web design and launch at zero cost. You only pay for essential extras — <strong>SEO services, domain registration, and hosting</strong> — once your website is live and thriving.
+  </p>
+  <div class="cta">
+    <a href="pricing.html" class="btn-light">Claim Your Free Business Website</a>
+  </div>
+</section>
+
+<section class="section light-bg">
+ 
+  <h2>What You Get With Our Free Website Design Offer – Kenya</h2>
+  
+<svg width="150px" height="100px" viewBox="0 0 360 240"role="img" aria-label="Diagram showing webdesign under construction" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser window -->
+  <rect x="40" y="40" width="280" height="140" rx="10" ry="10" fill="#e0f7fa" stroke="#00796b" stroke-width="2"/>
+  
+  <!-- Browser header -->
+  <rect x="40" y="40" width="280" height="20" fill="#004d40"/>
+  <circle cx="55" cy="50" r="3" fill="#f44336"/>
+  <circle cx="65" cy="50" r="3" fill="#ffeb3b"/>
+  <circle cx="75" cy="50" r="3" fill="#4caf50"/>
+
+  <!-- Layout blocks (representing content being built) -->
+  <rect x="60" y="70" width="80" height="12" fill="#00796b"/>
+  <rect x="60" y="90" width="60" height="10" fill="#80cbc4"/>
+  <rect x="60" y="110" width="180" height="50" fill="#b2dfdb" stroke="#00796b" stroke-dasharray="4 2"/>
+
+  <!-- Crane -->
+  <line x1="320" y1="20" x2="320" y2="140" stroke="#616161" stroke-width="4"/>
+  <line x1="280" y1="20" x2="320" y2="20" stroke="#616161" stroke-width="4"/>
+  <line x1="280" y1="20" x2="280" y2="80" stroke="#9e9e9e" stroke-dasharray="4 2"/>
+  <line x1="280" y1="80" x2="240" y2="80" stroke="#9e9e9e" stroke-width="2"/>
+
+  <!-- Hanging block -->
+  <rect x="230" y="80" width="20" height="20" fill="#ffc107" stroke="#fbc02d" stroke-width="1"/>
+
+  <!-- Scaffolding -->
+  <line x1="60" y1="165" x2="240" y2="165" stroke="#757575" stroke-width="2"/>
+  <line x1="60" y1="165" x2="60" y2="190" stroke="#757575" stroke-width="2"/>
+  <line x1="100" y1="165" x2="100" y2="190" stroke="#757575" stroke-width="2"/>
+  <line x1="140" y1="165" x2="140" y2="190" stroke="#757575" stroke-width="2"/>
+  <line x1="180" y1="165" x2="180" y2="190" stroke="#757575" stroke-width="2"/>
+  <line x1="220" y1="165" x2="220" y2="190" stroke="#757575" stroke-width="2"/>
+  <line x1="240" y1="165" x2="240" y2="190" stroke="#757575" stroke-width="2"/>
+
+  <!-- Ground -->
+  <line x1="30" y1="190" x2="330" y2="190" stroke="#424242" stroke-width="3"/>
+
+  
+</svg>
+  <p>
+    We build your business a stunning, fully responsive website without upfront charges. Perfect for startups, entrepreneurs, and small businesses in Kenya looking for an affordable online presence.
+  </p>
+  <ul>
+    <li>• Modern, customized web design tailored to your brand</li>
+    <li>• Mobile-friendly layout optimized for all devices</li>
+    <li>• Fast-loading performance to boost user experience and SEO</li>
+    <li>• Expertly crafted by professional web designers — 100% free</li>
+  </ul>
+</section>
+
+<!-- Web design themed divider -->
+<div style="width: 100%; height: 60px; overflow: hidden;">
+  <svg viewBox="0 0 100 10" preserveAspectRatio="none" style="width: 100%; height: 100%;" role="img" aria-label="devider between sections">
+    <!-- Left line -->
+    <line x1="0" y1="5" x2="42" y2="5" stroke= "#2f4f4f" stroke-width="0.5" />
+
+    <!-- Middle Web Icon: </> -->
+    <text x="50" y="6.5" text-anchor="middle" font-size="3" fill="#2f4f4f" font-family="monospace">
+      &lt;/&gt;
+    </text>
+
+    <!-- Right line -->
+    <line x1="58" y1="5" x2="100" y2="5" stroke="#2f4f4f" stroke-width="0.5" />
+  </svg>
+</div>
+
+<section class="section">
+  <h2>What You Still Need: SEO, Hosting & Domain for Your Free Website</h2>
+<div style="display: flex; justify-content: center; align-items: center; height: 20vh; margin-left: 70px;">
+  <svg width="400px" height="auto" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Diagram showing web hosting,SEO and domain" xmlns="http://www.w3.org/2000/svg" style="max-width: 400px;">
+
+    <!-- Small Server -->
+    <rect x="20" y="120" width="40" height="80" rx="6" fill="#455a64"/>
+    <rect x="30" y="135" width="20" height="6" fill="#00e676"/>
+    <rect x="30" y="150" width="20" height="6" fill="#00e676"/>
+
+    <!-- Bigger Server -->
+    <rect x="100" y="90" width="50" height="110" rx="8" fill="#37474f"/>
+    <rect x="115" y="110" width="24" height="6" fill="#00e676"/>
+    <rect x="115" y="130" width="24" height="6" fill="#00e676"/>
+    <rect x="115" y="150" width="24" height="6" fill="#00e676"/>
+
+    <!-- Biggest Server -->
+    <rect x="190" y="50" width="60" height="150" rx="10" fill="#263238"/>
+    <rect x="205" y="70" width="30" height="8" fill="#00e676"/>
+    <rect x="205" y="95" width="30" height="8" fill="#00e676"/>
+    <rect x="205" y="120" width="30" height="8" fill="#00e676"/>
+    <rect x="205" y="145" width="30" height="8" fill="#00e676"/>
+
+    <!-- SEO Tag -->
+    <rect x="260" y="40" width="60" height="30" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="1.5"/>
+    <text x="272" y="60" font-size="16" fill="white" font-family="Arial" font-weight="bold">SEO</text>
+
+    <!-- Domain Icon -->
+    <circle cx="290" cy="10" r="20" fill="#e3f2fd" stroke="#2f4f4f" stroke-width="2"/>
+    <text x="272" y="15" font-size="14" fill="#2f4f4f" font-family="Arial" font-weight="bold">WWW</text>
+
+    <!-- Graph -->
+    <polyline 
+      points="55,150 105,150 105,120 195,120 195,70 260,70 260,30 270,30"
+      fill="none"
+      stroke="#ff5722"
+      stroke-width="3"
+      stroke-linejoin="round"
+    />
+    <polygon points="267,22 277,30 267,38" fill="#ff5722"/>
+
+    <!-- Sparkles -->
+    <circle cx="310" cy="5" r="2" fill="#fdd835"/>
+    <circle cx="305" cy="5" r="1.5" fill="#fdd835"/>
+    <circle cx="320" cy="0" r="2" fill="#fdd835"/>
+  </svg>
+</div>
+
+
+  <p>
+    Even the best design won’t drive results without visibility. We focus your budget on what matters: <strong>SEO for Kenyan businesses</strong>, lightning-fast hosting, and a unique domain name. These are your tools for ranking on Google and converting visitors.
+  </p>
+  <ul>
+    <li>• Reliable, fast-loading web hosting</li>
+    <li>• Local SEO services to rank on Google Kenya</li>
+    <li>• Custom domain name and full domain control</li>
+  </ul>
+  <p>
+    Unlike other agencies that charge for everything, we only charge for results-driven essentials that grow your brand.
+  </p>
+  <div class="cta">
+    <a href="pricing.html" class="btn-dark">Explore SEO & Hosting Plans</a>
+  </div>
+</section>
+
+</main>
+
+<footer style="background: #2f4f4f; color: white; padding: 2rem;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; max-width: 1200px; margin: auto;">
+    
+    <!-- About -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 1rem;">About Freesite</h3>
+      <p style="line-height: 1.6;">
+        We help businesses grow online with fast, free websites and expert affordable SEO. Made with care from Kenya.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 1rem;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="pricing.html" style="color: white; text-decoration: none;">Pricing</a></li>
+        <li><a href="service.html" style="color: white; text-decoration: none;">Service</a></li>
+        <li><a href="portfolio.html" style="color: white; text-decoration: none;">Portfolio</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact us</a></li>
+        
+        <li><a href="about.html" style="color: white; text-decoration: none;">About us</a></li>
+    
+        <li><a href="faq.html" style="color: white; text-decoration: none;">FAQ</a></li>
+        
+        <li><a href="h&c.html" style="color: white; text-decoration: none;">Terms & Conditions</a></li>
+    
+        
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 1rem;">Contact</h3>
+      <p style="line-height: 1.8;">
+        Email: <a href="mailto:felix@freesite.co.ke" style="color: white;">felix@freesite.co.ke</a><br>
+        WhatsApp: <a href="https://wa.me/254783917685" style="color: white;">+254783917685</a><br>
+        Nairobi, Kenya
+      </p>
+    </div>
+
+    <!-- Social -->
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 1rem;">Follow Us</h3>
+      <p>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">Facebook</a><br>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">Instagram</a><br>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">LinkedIn</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;">
+    <p style="margin: 0;">&copy; 2025 Freesite. All rights reserved.</p>
+  </div>
+</footer>
+  <script>
+    const menuIcon = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    function toggleMenu(icon) {
+      icon.classList.toggle("open");
+      navMenu.classList.toggle("show");
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+      if (!menuIcon.contains(event.target) && !navMenu.contains(event.target)) {
+        menuIcon.classList.remove("open");
+        navMenu.classList.remove("show");
+      }
+    });
+  </script>
+
+</body>
+</html>
+

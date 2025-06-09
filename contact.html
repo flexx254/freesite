@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+ <meta name="description" content="Affordable, SEO-optimized websites for small businesses. DollarSites helps you grow online with expert web design from Kenya."/>
+  <meta name="keywords" content="DollarSites, SEO, Web Design, Affordable Websites, Small Business Websites, Kenya Web Development"/>
+  <meta name="author" content="DollarSites Team"/>
+  <meta property="og:title" content="DollarSites - Affordable Websites & SEO Services"/>
+  <meta property="og:description" content="Grow your business online with professional, fast, and affordable websites from DollarSites."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://yourdomain.com"/>
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg"/>
+  <title>DollarSites - Affordable Websites & SEO for Small Businesses</title>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Your Business Name",
+    "image": "https://example.com/logo.png",
+    "url": "https://example.com",
+    "telephone": "+254712345678",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Nairobi Lane",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "description": "Affordable web design and SEO in Kenya"
+  }
+  
+
+  </script>
+  <link rel="canonical" href="https://yourdomain.com/" />
+<link rel="icon" href="/favicon.ico" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: #3b5f5f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+ 
+    nav {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    nav a:last-child {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Hamburger */
+    .menu-icon {
+      display: none;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      z-index: 1100;
+      top:2px;
+    }
+
+    .menu-icon span {
+      background: #fff;
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition: 0.3s ease;
+    }
+
+    .menu-icon span:nth-child(1) {
+      top: 6px;
+    }
+
+    .menu-icon span:nth-child(2) {
+      top: 13px;
+    }
+
+    .menu-icon span:nth-child(3) {
+      top: 20px;
+    }
+
+    .menu-icon.open span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 13px;
+    }
+
+    .menu-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-icon.open span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 13px;
+    }
+
+    #navMenu {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+        
+
+            
+        
+      }
+
+      #navMenu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      #navMenu.show {
+        display: flex;
+      }
+
+      #navMenu a {
+        margin: 10px 0;
+      }
+    }
+
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+
+nav a {
+    color:#2f4f4f;
+}
+
+nav a:last-child{
+    
+    color: #2f4f4f;
+}
+}
+
+.wrapper-logo{
+  margin-top: 5px;
+  margin-left: -20px;
+}
+  
+
+
+.logo-svg .bg {
+  fill:#cccccc; /* your original green background */
+}
+
+.logo-svg .circle {
+  fill: none;
+  stroke: #2f4f4f;
+  stroke-width: 2;
+}
+
+.logo-svg .orbit {
+  stroke: #2f4f4f;
+  stroke-width: 1;
+  fill: none;
+}
+
+.logo-svg .point {
+  fill: #2f4f4f;
+}
+
+.logo-svg .text {
+  fill: #2f4f4f;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+
+<div class="wrapper-logo">
+  <svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+    <!-- Background -->
+    <rect class="bg" width="100" height="40" rx="6" />
+
+    <!-- Small Globe Icon -->
+    <g transform="translate(15,20)">
+      <circle class="circle" r="10" />
+      <ellipse class="orbit" rx="10" ry="2.5" />
+      <ellipse class="orbit" rx="2.5" ry="10" />
+      <circle class="point" cx="5" cy="4" r="1" />
+      <circle class="point" cx="-4" cy="-5" r="1" />
+      <circle class="point" cx="1" cy="6" r="1" />
+    </g>
+
+    <!-- Text -->
+    <text class="text" x="35" y="25">Freesite</text>
+  </svg>
+</div>
+   <div class="menu-icon" onclick="toggleMenu(this)" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  <nav id="navMenu" aria-label = "Main navigation">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="service.html">Service</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact Us</a>
+   
+      <a href="about.html">About us</a>
+      <a href="blog.html">Blog</a>
+      
+      <a href="pricing.html">Get Started</a>
+      
+      
+    </nav>
+
+  </header>
+  
+
+<main id="contact" style="background-color: #f9f9f9; padding: 60px 20px;">
+  <section style="max-width: 800px; margin: 0 auto; background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; color: #2f4f4f;">Contact Me</h2>
+    <p style="text-align: center; margin-bottom: 40px;">I'd love to hear from you. Please fill out the form below to get in touch.</p>
+    
+<form action="https://formspree.io/f/your-form-id" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+  <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+  
+  <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+  
+  <textarea name="message" placeholder="Your Message" rows="5" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+  
+  <button type="submit" style="background-color: #2f4f4f; color: white; border: none; padding: 12px; border-radius: 5px; cursor: pointer;">
+    Send Message
+  </button>
+</form>
+  </section>
+  
+<section style="text-align: center; padding: 40px 20px; background-color: #eef1f1;">
+  <h3 style="color: #2f4f4f;">Other Ways to Reach Me</h3>
+  <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  <p>Phone: +254 712 345678</p>
+</section>
+</main>
+<footer style="background: #2f4f4f; color: white; padding: 2rem;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; max-width: 1200px; margin: auto;">
+    
+    <!-- About -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 1rem;">About DollarSites</h3>
+      <p style="line-height: 1.6;">
+        We help U.S.-based businesses grow online with fast, affordable websites and expert SEO. Made with care from Kenya.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 1rem;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="pricing.html" style="color: white; text-decoration: none;">Pricing</a></li>
+        <li><a href="service.html" style="color: white; text-decoration: none;">Service</a></li>
+        <li><a href="portfolio.html" style="color: white; text-decoration: none;">Portfolio</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact us</a></li>
+        
+        <li><a href="about.html" style="color: white; text-decoration: none;">About us</a></li>
+    
+        
+       <li><a href="faq.html" style="color: white; text-decoration: none;">FAQ</a></li>
+       
+        <li><a href="h&c.html" style="color: white; text-decoration: none;">Terms & Conditions</a></li>
+        
+      </ul>
+    </div>
+
+
+    <!-- Contact -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="margin-bottom: 1rem;">Contact</h3>
+      <p style="line-height: 1.8;">
+        Email: <a href="mailto:yourname@yourdomain.com" style="color: white;">yourname@yourdomain.com</a><br>
+        WhatsApp: <a href="https://wa.me/2547xxxxxxxx" style="color: white;">+2547xxxxxxxx</a><br>
+        Nairobi, Kenya
+      </p>
+    </div>
+
+    <!-- Social -->
+    <div style="flex: 1 1 150px;">
+      <h3 style="margin-bottom: 1rem;">Follow Us</h3>
+      <p>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">Facebook</a><br>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">Instagram</a><br>
+        <a href="#" style="color: white; margin-right: 1rem; text-decoration: none;">LinkedIn</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;">
+    <p style="margin: 0;">&copy; 2025 DollarSites. All rights reserved.</p>
+  </div>
+</footer>
+  <script>
+    const menuIcon = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    function toggleMenu(icon) {
+      icon.classList.toggle("open");
+      navMenu.classList.toggle("show");
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+      if (!menuIcon.contains(event.target) && !navMenu.contains(event.target)) {
+        menuIcon.classList.remove("open");
+        navMenu.classList.remove("show");
+      }
+    });
+  </script>
+
+</body>
+</html>
+
