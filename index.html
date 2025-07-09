@@ -518,6 +518,84 @@ from="0" to="1" begin="2.3s" dur="0.8s" fill="freeze" />
   </div>
 </section>
 
+  <section class="section" style="background: linear-gradient(to bottom right, #f3fdfc, #e6f5f4);">
+  <h2>Happy Clients</h2>
+  <p>These clients trusted Freesite to build their online presence:</p>
+
+  <div class="clients-wrapper">
+    <!-- Driver -->
+    <a href="https://flexx254.github.io/d4d" target="_blank" class="client-card">
+      <img src="driver.png" alt="Driver Client">
+      <h3>D4D Drivers</h3>
+      <p>Taxi driver network connecting vehicle owners and drivers.</p>
+    </a>
+
+    <!-- Corporate -->
+    <a href="https://flexx254.github.io/interior-design" target="_blank" class="client-card">
+      <img src="corporate.png" alt="Interior Design Client">
+      <h3>Interior Design</h3>
+      <p>Modern minimalist designs for homes and offices in Kenya.</p>
+    </a>
+
+    <!-- Salesperson -->
+    <a href="https://flexx254.github.io/real-estate" target="_blank" class="client-card">
+      <img src="sales-person.png" alt="Real Estate Client">
+      <h3>Real Estate</h3>
+      <p>Responsive listing site with categorized property offerings.</p>
+    </a>
+  </div>
+
+
+<style>
+  .clients-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .client-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    text-decoration: none;
+    color: #2f4f4f;
+    width: 260px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .client-card img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    max-height: 180px;
+  }
+
+  .client-card h3 {
+    margin: 0.8rem 0 0.2rem 0;
+    font-size: 1.2rem;
+  }
+
+  .client-card p {
+    font-size: 0.95rem;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .client-card {
+      width: 90%;
+    }
+  }
+</style>
+  </section>
+
 </main>
 
 <footer style="background: #2f4f4f; color: white; padding: 2rem;">
