@@ -597,6 +597,7 @@ from="0" to="1" begin="2.3s" dur="0.8s" fill="freeze" />
       <p>An app that monitors e-hailing platforms to verify if they calculate trip fares accurately.
 Helps drivers and car owners spot underpayment or fare mismatches in real time.
       </p>
+      <div class="see-work-btn">Seen Our Work <span class="arrow">→</span></div>
     </a>
 
     <!-- Corporate -->
@@ -604,6 +605,7 @@ Helps drivers and car owners spot underpayment or fare mismatches in real time.
       <img src="corporate.png" alt="Interior Design Client">
       <h3>Interior Design</h3>
       <p>Modern minimalist designs for homes and offices in Kenya.</p>
+      <div class="see-work-btn">Seen Our Work <span class="arrow">→</span></div>
     </a>
 
     <!-- Salesperson -->
@@ -611,6 +613,8 @@ Helps drivers and car owners spot underpayment or fare mismatches in real time.
       <img src="sales-person.png" alt="Real Estate Client">
       <h3>Real Estate</h3>
       <p>Responsive listing site with categorized property offerings.</p>
+
+      <div class="see-work-btn">Seen Our Work <span class="arrow">→</span></div>
     </a>
   </div>
 
@@ -661,6 +665,30 @@ Helps drivers and car owners spot underpayment or fare mismatches in real time.
     .client-card {
       width: 90%;
     }
+  }
+
+  .see-work-btn {
+  background-color: #2f4f4f;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 18px;
+  margin: 1rem auto 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  pointer-events: none; /* disables clicking */
+  opacity: 0.9;
+}
+
+.see-work-btn .arrow {
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.client-card:hover .see-work-btn .arrow {
+  transform: translateX(4px);
   }
 </style>
   </section>
