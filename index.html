@@ -325,6 +325,7 @@ nav a:last-child{
     </nav>
   </header>
 
+
 <main>
   
 <section class="hero">
@@ -516,7 +517,73 @@ from="0" to="1" begin="2.3s" dur="0.8s" fill="freeze" />
   <div class="cta">
     <a href="pricing.html" class="btn-dark">Explore SEO & Hosting Plans</a>
   </div>
+
+
+
+  <section class="section light-bg" id="job-summary">
+  <h2>Our Work Summary</h2>
+  <p>Real-time stats from Freesite clients:</p>
+  <div class="stats-container">
+    <div class="circle" style="--color: #2f4f4f;">
+      <strong>25</strong>
+      <span>Jobs Done</span>
+    </div>
+    <div class="circle" style="--color: #ffc107; color: #333;">
+      <strong>5</strong>
+      <span>Ongoing</span>
+    </div>
+    <div class="circle" style="--color: #ff5722;">
+      <strong>2</strong>
+      <span>Pending</span>
+    </div>
+  </div>
 </section>
+
+<style>
+  #job-summary .stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    opacity: 0;
+    transform: scale(0.7);
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .circle:nth-child(2) { animation-delay: 0.3s; }
+  .circle:nth-child(3) { animation-delay: 0.6s; }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .circle {
+      width: 100px;
+      height: 100px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+</section>
+  
 
   <section class="section" style="background: linear-gradient(to bottom right, #f3fdfc, #e6f5f4);">
   <h2>Happy Clients</h2>
@@ -595,6 +662,7 @@ from="0" to="1" begin="2.3s" dur="0.8s" fill="freeze" />
   }
 </style>
   </section>
+
 
 </main>
 
